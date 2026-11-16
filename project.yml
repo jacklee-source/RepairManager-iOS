@@ -1,0 +1,24 @@
+
+name: RepairManager
+
+options:
+  bundleIdPrefix: com.jacklee
+
+targets:
+  RepairManager:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: .
+        includes:
+          - "*.swift"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jacklee.repairmanager
+        PRODUCT_NAME: RepairManager
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
